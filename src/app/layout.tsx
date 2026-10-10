@@ -13,7 +13,7 @@ const nunito = Nunito({ variable: "--font-nunito", weight: ["600", "700", "800",
 const DESCRIPTION = "Aprueba AWS Solutions Architect Associate (SAA-C03) jugando rondas de 4 minutos, con métodos de estudio basados en evidencia.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "https://learnaws.crafter.run"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "https://learnaws.crafter.games"),
   title: "Learn AWS · SAA-C03",
   description: DESCRIPTION,
   openGraph: { title: "Learn AWS · SAA-C03", description: DESCRIPTION, siteName: "Learn AWS", locale: "es_419", type: "website" },

@@ -11,7 +11,7 @@ export default async function EventScreen({ params }: PageProps<"/events/[slug]/
   await requireAdmin();
   const e = getEvent((await params).slug);
   if (!e) notFound();
-  const url = `${process.env.NEXT_PUBLIC_APP_URL ?? "https://learnaws.crafter.run"}/events/${e.slug}`;
+  const url = `${process.env.NEXT_PUBLIC_APP_URL ?? "https://learnaws.crafter.games"}/events/${e.slug}`;
   const qr = await QRCode.toString(url, { type: "svg", margin: 0, errorCorrectionLevel: "M", color: { dark: "#1c1840", light: "#ffffff" } });
   return <ScreenClient event={e} qrSvg={qr} url={url.replace(/^https?:\/\//, "")} />;
 }
