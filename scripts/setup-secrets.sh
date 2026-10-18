@@ -228,8 +228,8 @@ step "En el dashboard de Clerk: Users → Create user → tu email (y contraseñ
 step "Abre el usuario y copia su User ID (empieza con user_)."
 ask ADMIN_USER_IDS "Pega tu User ID (admin; varios separados por coma):"
 write_env ADMIN_USER_IDS "$ADMIN_USER_IDS"
-step "Registro abierto: Configure → Restrictions → Sign-up mode → Public."
-note "Si prefieres cerrar el registro más adelante, cámbialo a Restricted o Waitlist; no requiere tocar código."
+step "Registro abierto: Configure → Access mode → Open."
+note "Si prefieres cerrar el registro más adelante, cámbialo a Invite-only o Waitlist; no requiere tocar código."
 pause "Enter cuando termines"
 
 # ── 4. Push notifications ─────────────────────────────────────────────────
